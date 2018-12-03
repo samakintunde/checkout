@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Visa Payment Form</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="form-container">
+        <div class="form-header">
+          <img src="./assets/images/Visa.png" alt="Visa logo" />
+          <div class="purchase-info">
+            <p>39 EUR</p>
+            <p>design magazine</p>
+          </div>
+        </div>
+        <form>
+          <div class="row">
+            <div>
+              <label for="card-number">Card Number</label>
+              <input
+                type="number"
+                name="card-number"
+                id="card-number"
+                placeholder="1111 2222 3333 9999"
+              />
+            </div>
+            <div>
+              <label for="cvc">CVC</label>
+              <input type="number" name="cvc" id="cvc" placeholder="888" />
+            </div>
+          </div>
+          <div class="row">
+            <label for="holder-name">Holder Name</label>
+            <input
+              type="text"
+              name="holder-name"
+              id="holder-name"
+              placeholder="Anne Smith"
+            />
+          </div>
+          <div class="row">
+            <label for="expiration-date">Expiration Date</label>
+            <div class="select-group">
+              <select name="date" id="date">
+                <option value="15" selected>15</option>
+              </select>
+              <select name="month" id="month">
+                <option value="November" selected>November</option>
+              </select>
+              <select name="year" id="year">
+                <option value="2018" selected>2018</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Complete payment</button>
+        </form>
+      </section>
+      <div class="back-layer"></div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/helveticaneue-roman-webfont.woff") format("woff");
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("./assets/images/Background.png");
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+main.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+section.form-container {
+  position: relative;
+  z-index: 0;
+  background-color: #ffffff;
+  width: max-content;
+  min-width: 360px;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 7.5px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+div.form-header {
+  display: flex;
+}
+
+div.form-header img {
+  height: 3em;
+  margin-right: 1.5em;
+}
+
+div.form-header div.purchase-info {
+  margin-top: -5px;
+}
+
+div.form-header div.purchase-info p:first-child {
+  color: #3842b8;
+  font-size: 1.75em;
+}
+
+div.form-header div.purchase-info p:last-child {
+  font-size: 1.25em;
+  color: #43444c;
+  letter-spacing: 0.56px;
+}
+
+form {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  background: #e6e7ee;
+  border-radius: 7.5px;
+  padding: 0.5em 0.85em;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.75px;
+  line-height: 24px;
+  font-size: 19.8px;
+}
+
+form label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  color: #000000;
+  letter-spacing: 0.45px;
+  margin-bottom: 1em;
+}
+
+form label[for="expiration-date"] {
+  font-family: Lato, sans-serif;
+}
+
+form div.row {
+  margin: 1em 0;
+}
+
+form div.row:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form div.row:first-child div:first-child input {
+  max-width: 13.5em;
+  margin-right: 1.5em;
+}
+
+form div.row:first-child div:last-child input {
+  /* flex-grow: 1;   */
+  width: 2.5em;
+}
+
+form div.row:nth-child(2) input {
+  width: calc(100% - 2em);
+}
+
+form div.select-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form select {
+  border-radius: 7.5px;
+  padding: 0.5em 1.5em 0.5em 0.75em;
+  font-size: 1.25em;
+  background: url("./assets/icons/round-keyboard_arrow_down-24px.svg") right
+    center no-repeat;
+  background-color: #e6e7ee;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+form select option {
+  padding: 0 4px;
+}
+
+form button {
+  color: #ffffff;
+  padding: 0.75em 1em;
+  margin-top: 1em;
+  border-radius: 7.5px;
+  background-image: linear-gradient(to right, #4a67e7, #3942b8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.45px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div.back-layer {
+  position: absolute;
+  z-index: -1;
+  background-color: #e6e7ee;
+  height: 68%;
+  width: 450px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: calc(50% + 1em);
+  box-shadow: 0 15px 29px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 7.2px;
+  opacity: 0.99;
+}
